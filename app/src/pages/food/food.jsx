@@ -28,7 +28,7 @@ export default function Food() {
         </thead>
         <tbody>
           {foods.map((food) => (
-            <tr>
+            <tr key={food.id}>
               <td>{food.id}</td>
               <td>{food.name}</td>
             </tr>
